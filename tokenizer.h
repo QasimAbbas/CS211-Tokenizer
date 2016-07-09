@@ -16,9 +16,17 @@ void dummyFunc();
  * Tokenizer type.  You need to fill in the type as part of your implementation.
  * Design your structure carefully. A good structure will always make a program much easier to implement.
  */
+typedef struct Tokenizer_LL{
+	char* data;
+	char* type;
+	struct Node *next;
+
+} Node;
 
 typedef struct TokenizerT_ {
 	/* fill in your code here */
+	Node *head;
+	Node *tail;
 
 } TokenizerT;
 

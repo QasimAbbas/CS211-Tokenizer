@@ -15,8 +15,8 @@ void dummyFunc(){
 TokenizerT *TKCreate(char * ts){
 	/* fill in your code here */
 
-	printf("Into TKCreate with the FILE: %s", ts);
-
+	printf("Into TKCreate with the FILE: %s \n", ts);
+	
 /* you might need more than a few helper functions */
 
 /* SAMPLE LOGIC:
