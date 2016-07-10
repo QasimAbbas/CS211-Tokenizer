@@ -16,7 +16,8 @@ TokenizerT *TKCreate(char * ts){
 	/* fill in your code here */
 
 	printf("Into TKCreate with the FILE: %s \n", ts);
-	
+	Node *head = (Node *)malloc(sizeof(Node));
+	Node *tail = (Node *)malloc(sizeof(Node));
 /* you might need more than a few helper functions */
 
 /* SAMPLE LOGIC:
