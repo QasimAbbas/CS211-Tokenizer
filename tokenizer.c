@@ -45,7 +45,7 @@ TokenizerT *TKCreate(char * ts){
             if (*nexttoken == '\0') break;
             
             //Search for Token in the original STR and move the tmp pointer forward
-            strstr(tmp, nexttoken);
+         //   strstr(tmp, nexttoken);
             tmp += strlen(nexttoken);
             
             
