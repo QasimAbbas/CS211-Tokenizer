@@ -245,8 +245,8 @@ void TKPrint(TokenizerT *tk){
     
     
     //Create result + error msg files
-     FILE *results = fopen("results", "ab+");
-     FILE *error = fopen("error.msg", "ab+");
+     FILE *results = fopen("results", "rw+");
+     FILE *error = fopen("error.msg", "rw+");
     
     
     //Traverse Linked List and write Type and Data to File
