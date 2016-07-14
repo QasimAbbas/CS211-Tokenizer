@@ -16,12 +16,17 @@ void dummyFunc();
  * Tokenizer type.  You need to fill in the type as part of your implementation.
  * Design your structure carefully. A good structure will always make a program much easier to implement.
  */
+
+//The Datastructure that will be used is a Linked List.  The Nodes are created by the struct Tokenizer_LL with the values of Data, Type, and Node next
+
 typedef struct Tokenizer_LL{
 	char* data;
 	char* type;
-	struct Node *next;
+    struct Tokenizer_LL *next;
 
 } Node;
+
+//Since the Data Structure needs to be held, the Struct TokenizerT will hold the head and tail, and the entire Linked List
 
 typedef struct TokenizerT_ {
 	/* fill in your code here */
@@ -75,5 +80,16 @@ char *TKGetNextToken( char * start );
 
 void TKPrint(TokenizerT *tk);
 
+//Determine if token is a Decimal
+char *isDecimal(char* str);
+
+//Determine if token is Octal
+char *isOctal(char *str);
+
+//Detemnine if token is Hex
+char *isHex(char *str);
+
+//Determine if token is floating
+char *isFloating(char *str);
 
 #endif
